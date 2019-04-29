@@ -1,0 +1,69 @@
+{
+  "name": "react-boilerplate",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
+    }
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --watch --open --config webpack.config.dev.js",
+    "dev:hot": "npm run dev -- --hot",
+    "test": "jest",
+    "format": "pretty-quick",
+    "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
+    "lint": "eslint ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avanslaars/egghead-react-boilerplate.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/avanslaars/egghead-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/avanslaars/egghead-react-boilerplate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.7.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-dynamic-import-node": "^2.2.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^2.1.0",
+    "jest": "^24.7.1",
+    "jest-dom": "^3.1.3",
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.10.0",
+    "react-testing-library": "^7.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.1",
+    "react-dom": "^16.6.1",
+    "react-hot-loader": "^4.8.4"
+  }
+}
