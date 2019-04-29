@@ -7,4 +7,8 @@ describe('App', () => {
   it('Renders without error', () => {
     render(<App />)
   })
+
+  it('Fails', () => {
+    expect(true).toBe(false)
+  })
 })

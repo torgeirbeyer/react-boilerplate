@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
-    }
-  },
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack-dev-server --watch --open --config webpack.config.dev.js",
@@ -16,6 +11,11 @@
     "format": "pretty-quick",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
     "lint": "eslint ./"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
+    }
   },
   "author": "",
   "license": "ISC",
