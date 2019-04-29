@@ -8,8 +8,6 @@ class App extends React.Component {
     count: 0
   }
 
-  const a = "A"
-
   increment = () => {
     this.setState(state => ({ count: state.count + 1 }))
   }
