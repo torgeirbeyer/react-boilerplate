@@ -23,21 +23,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-ol,
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  outline: none;
-}
-
-.warning {
-  color: rgb(221, 185, 53);
-}
